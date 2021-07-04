@@ -55,7 +55,7 @@ header{
     flex-direction: row;
     justify-content: space-between; 
 }
-.navigation_phone{
+.navigation_phone, .nav_title_mobile{
     display: none;
 }
 .one{
@@ -179,19 +179,20 @@ main{
 
 @media (max-width:600px){
     /* Navigation for small screens */
-
-   
-    
-   
-    
     .navigation_pc{
         display: none;
     }
+    .nav_title_mobile{
+        display: inline-block;
+        font-family: 'Nunito', sans-serif;
+        padding-left: 10px;
+    }
     .navigation_phone{
+        direction: rtl;
         justify-content: flex-end;
         display: inline-block;
-         /* width: 100%;  */
-         background-color: yellow;
+        width: 100%; 
+         /* background-color: yellow; */
         margin-left: auto;
         /* display: flex;
         flex-direction: column;
@@ -200,9 +201,19 @@ main{
     }
     
     #nav_table{
+        border-collapse: separate;
+        border-spacing: 15px;
+        padding: 0px 10px;
+        /* line-height: 3; */
+        direction: ltr;
         display: block;
     }
+    #nav_table tbody{
+        width: 100%;
+        display: inline-table;
+    }
     header{
+        padding-top: 25px;
         height: auto;
     }
 
@@ -218,8 +229,11 @@ main{
 
     /* style the button */
     #NavButton{
+        position: absolute;
+        top:25px;
+        right: 10px;
         display: inline-block;
-        background-color: red;
+        /* background-color: red; */
         /* margin-left: 300px; */
     }
 
