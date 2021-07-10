@@ -1,88 +1,95 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
 }
+
 /* MAIN CODES STARTS HERE */
 
-header{
-    width:100%;
+header {
+    width: 100%;
     height: 40px;
 }
-.navigation_pc{
-    width:100%;
+
+.navigation_pc {
+    width: 100%;
     height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.navigation_phone, .nav_title_mobile{
+
+.navigation_phone, .nav_title_mobile {
     display: none;
 }
-.one{
+
+.one {
     justify-self: flex-start;
     /* margin-right: auto; */
     width: 150px;
     align-items: center;
-    
 }
-.two{
+
+.two {
     width: 20%;
     /* justify-self: center; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.three{
-    width:150px;
+
+.three {
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav_title{
+
+.nav_title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +97,8 @@ header{
     width: 100%;
     font-family: 'Nunito', sans-serif;
 }
-main{
+
+main {
     width: 100%;
     height: 80vh;
     background-color: #5390d9;
@@ -98,45 +106,52 @@ main{
     justify-content: space-evenly;
     align-items: center;
 }
-.main_text{
+
+.main_text {
     display: flex;
     flex-direction: column;
-    height:70%;
+    height: 70%;
     width: 30%;
     font-family: 'Nunito', sans-serif;
 }
-.main_text_ln1{
-    font-size: 60px; 
+
+.main_text_ln1 {
+    font-size: 60px;
 }
-.main_text_ln2{
-    font-size: 30px;  
+
+.main_text_ln2 {
+    font-size: 30px;
 }
-.main_text_ln3{
+
+.main_text_ln3 {
     font-size: 30px;
     justify-self: flex-end;
     margin-top: auto;
 }
-.brands_list{
+
+.brands_list {
     width: 100%;
     justify-self: flex-end;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.brandlogo{
-    width:80px;
+
+.brandlogo {
+    width: 80px;
 }
-#main_image_one{
-    width:300px;
+
+#main_image_one {
+    width: 300px;
 }
 
 /*Products Section beings here*/
 
-
-.products{
+.products {
     /* width: 100%; */
     /* height: 1500px; */
     background-color: #48bfe3;
 }
-.product_heading{
+
+.product_heading {
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -144,7 +159,8 @@ main{
     text-decoration: underline;
     padding: 20px 0px;
 }
-.items{
+
+.items {
     width: 400px;
     height: 400px;
     background-color: white;
@@ -152,54 +168,65 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center
-
 }
-.img_items{
+
+.img_items {
     width: 100px;
     /* height: 100px; */
 }
-.item_title{
+
+.item_title {
     font-size: 20px;
     font-weight: bold;
 }
-.item_price{
+
+.item_price {
     font-size: 20px;
     font-weight: bold;
 }
-.discount{
+
+.discount {
     font-size: 17px;
     font-weight: 100;
     text-decoration: line-through;
 }
-.place_order{
+
+.place_order {
     width: 36%;
     height: 40px;
     border: 1px solid bdb2ff;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bdb2ff;
-    color:white;
+    background-color: lightskyblue;
+    color: white;
     transition: background-color 200ms ease-in-out;
-    cursor:pointer;
+    cursor: pointer;
 }
-.place_order:hover{
+
+.place_order:hover {
     background-color: #269aff;
 }
-.new:focus{
+
+.new:focus {
     background-color: #269aff;
 }
-.row_one{
+
+.row_one {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding: 30px 10px;
 }
-#more {display: none;}
-#myBtn{
+
+#more {
+    display: none;
+}
+
+#myBtn {
     color: inherit;
     height: 3rem;
-    background-image: linear-gradient(transparent,white);
+    background-image: linear-gradient(transparent, white);
     align-items: center;
     width: 100%;
     justify-content: center;
@@ -210,7 +237,7 @@ main{
 
 /*Location Section begins here*/
 
-.location{
+#location {
     width: 100%;
     height: 600px;
     background-color: #56cfe1;
@@ -218,45 +245,68 @@ main{
     justify-content: space-evenly;
     align-items: center;
 }
-#map_location{
+
+#map_location {
+    margin: 3%;
     width: 900px;
     height: 450px;
+}
+#address{
+    margin: 5%;
 }
 
 /*Contact Section begins here*/
 
-.contact{
+#contact {
     width: 100%;
-    height: 600px;
-    background-color: #64dfdf;
+    background-color: #5390d9;
+    display: flex;
+}
+#contact .flex{
+    display: flex;
+    width: -webkit-fill-available;
+}
+.border{
+    border-right-width: 1px;
+    border-right-color: white;
+    border-right-style: dashed;
+}
+.contact_us, .quick_link, .cuconut{
+    width: -webkit-fill-available;
+    padding: 5%;
+}
+.cuconut img{
+    width:200px;
+}
+.cuconut p{
+    color: bisque;
 }
 
 /*MEDIA QUERY*/
 
-@media (max-width:600px){
+@media (max-width:600px) {
     /* Navigation for small screens */
-    .navigation_pc{
+    .navigation_pc {
         display: none;
     }
-    .nav_title_mobile{
+    .nav_title_mobile {
         display: inline-block;
         font-family: 'Nunito', sans-serif;
         padding-left: 10px;
     }
-    .navigation_phone{
+    .navigation_phone {
         direction: rtl;
         justify-content: flex-end;
         display: inline-block;
-        width: 100%; 
-         /* background-color: yellow; */
+        width: 100%;
+        /* background-color: yellow; */
         margin-left: auto;
         /* display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center; */
     }
-    
-    #nav_table{
+    #nav_table {
         border-collapse: separate;
         border-spacing: 15px;
         padding: 0px 10px;
@@ -264,95 +314,88 @@ main{
         direction: ltr;
         display: block;
     }
-    #nav_table tbody{
+    #nav_table tbody {
         width: 100%;
         display: inline-table;
     }
-    header{
+    header {
         padding-top: 25px;
         height: auto;
     }
-
     /* Hide the checkbox */
-    #expand_checkbox{
+    #expand_checkbox {
         display: none;
     }
-
     /* Hide the collapsible content */
-    .expand_menu{
+    .expand_menu {
         visibility: collapse;
     }
-
     /* style the button */
-    #NavButton{
+    #NavButton {
         position: absolute;
-        top:25px;
+        top: 25px;
         right: 10px;
         display: inline-block;
         /* background-color: red; */
         /* margin-left: 300px; */
     }
-
     /* Show hidden content on button press */
-    #expand_checkbox:checked ~ * .expand_menu{
+    #expand_checkbox:checked~* .expand_menu {
         visibility: visible;
     }
-
     /* Text for the button */
-    #expand_checkbox:checked ~ #NavButton::before{
+    #expand_checkbox:checked~#NavButton::before {
         content: "close";
     }
-
     /* Text for the button when unchecked */
-    #expand_checkbox:not(:checked) ~ #NavButton::before{
-        content:"menu";
+    #expand_checkbox:not(:checked)~#NavButton::before {
+        content: "menu";
     }
-
     /* End of the Navigation for phones */
-    main{
-        height:auto;
+    main {
+        height: auto;
         flex-direction: column;
         justify-content: space-between;
     }
-    .main_text{
+    .main_text {
         width: 100%;
         height: 40%;
     }
-    .main_text_ln1{
+    .main_text_ln1 {
         font-size: 3rem;
         padding: 25px 20px;
     }
-    .main_text_ln2{
+    .main_text_ln2 {
         font-size: 2rem;
         padding: 0px 20px;
     }
-    .main_text_ln3{
+    .main_text_ln3 {
         font-size: 1.5rem;
         padding: 10px 20px;
     }
-    .brands_list{
+    .brands_list {
         flex-wrap: wrap;
         display: flex;
         justify-content: space-evenly;
         padding-bottom: 10px;
         margin-bottom: 10px;
     }
-    .brandlogo{
-        margin:5px;
+    .brandlogo {
+        margin: 5px;
     }
-    .main_image{
+    .main_image {
         display: flex;
         justify-content: center;
-        align-items:center ;
+        align-items: center;
         padding: 15px;
     }
-    .products{
+    .products {
         /* height: 3500px; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .row_one{
+    .row_one {
         width: 100%;
         flex-direction: column;
         height: 30%;
@@ -360,16 +403,23 @@ main{
         align-items: center;
         padding: 0;
     }
-    .items{
+    .items {
         width: 300px;
         height: 300px;
         padding: 10px 0px;
+        margin: 5%;
     }
-    .location{
+    #location {
         flex-direction: column;
     }
-    #map_location{
+    #map_location {
         width: 90%;
         height: 450px;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .border{
+        border: none;
     }
 }
