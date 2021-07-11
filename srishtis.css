@@ -265,6 +265,7 @@ main {
 #contact .flex{
     display: flex;
     width: -webkit-fill-available;
+    width: -moz-available;
 }
 .border{
     border-right-width: 1px;
@@ -273,6 +274,7 @@ main {
 }
 .contact_us, .quick_link, .cuconut{
     width: -webkit-fill-available;
+    width: -moz-available;
     padding: 5%;
 }
 .cuconut img{
